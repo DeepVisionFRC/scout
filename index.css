@@ -1,0 +1,51 @@
+body {
+    background-color: #b200ff;
+    animation: bgcolor infinite 35s
+}
+
+#sesscodeinputdiv {
+    margin: 0 auto;
+    margin-top: 250px;
+    padding: 0;
+    width: 800px; 
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 55px;
+}
+
+#sesscodeinput {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@keyframes bgcolor {
+    30% {
+        background-color: #b200ff;
+    }
+    40% {
+        background-color: #ff00ff;
+    }
+    50% {
+        background-color: #ff0000;
+    }
+    60% {
+        background-color: #ffff00;
+    }
+    70% {
+        background-color: #00ff00;
+    }
+    80% {
+        background-color: #00ffff;
+    }
+    90% {
+        background-color: #0000ff;
+    }
+    100% {
+        background-color: #b200ff;
+    }
+}
