@@ -1,0 +1,63 @@
+head{
+    background-color: #b649ff;
+}
+body{
+    background-color: #b649ff;
+}
+p#header{
+    font-size: xx-large;
+    background-color: #b649ff;
+    color: white;
+    text-align: center;
+}
+p#invalidLogin{
+    font-size: xx-large;
+    background-color: #b649ff;
+    color: white;
+    text-align: center;
+}
+form{
+    font-size: large;
+    color: white;
+    background-color: #b649ff;
+    text-align: center;
+}
+input[type="submit"]{
+    width: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#b649ff;
+    color: white;
+    border-color: black;
+    border-radius: 1px;
+}
+input[type="text"]:focus{
+    border: 3px solid black;
+}
+input[type="password"]:focus{
+    border: 3px solid black;
+}
+input[type="text"]{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border: white;
+    border-radius: 5px;
+}
+input[type="password"]{
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border: white;
+    border-radius: 5px;
+    font-size: medium;
+}
+input[type="number"]{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border: white;
+    border-radius: 5px;
+}
+input[type="number"]:focus{
+    border: 3px solid black;
+}
