@@ -1,0 +1,26 @@
+head{
+    background-color: #b649ff;
+}
+body{
+    background-color: #b649ff;
+}
+div{
+    margin-left: 38%;
+    overflow: hidden;
+}
+div#bar {
+    margin-left: 20%;
+    width: 60%;
+    background-color: grey;
+}
+
+div#progress {
+    margin-left: 0;
+    width: 10%;
+    height: 30px;
+    background-color: purple;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+

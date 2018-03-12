@@ -39,7 +39,7 @@ div#WebsiteContainer{
     /*float: left; */
 }
 div#FormContianer{
-    float: right;
+    margin-left: 30%;
 }
 div#IdentifierContainer{
     float: left;
