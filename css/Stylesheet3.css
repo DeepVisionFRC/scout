@@ -1,0 +1,63 @@
+head{
+    background-color: #b649ff;
+}
+body{
+    background-color: #b649ff;
+}
+h5{
+    position: fixed;
+}
+p{
+    position: fixed;
+}
+image{
+    position: fixed;
+}
+form{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: Larger;
+    color: white;
+    background-color: #b649ff;
+}
+div{
+    margin-left: 30%;
+}
+div#IdentifierContainer{
+    margin-left: 0;
+    float: left;
+}
+.formdiv{
+    margin: 0 auto;
+}
+.formdiv p{
+    display: inline-block;
+}
+input[type="number"]:focus{
+    border: 3px solid black;
+}
+input[type="number"]{
+    margin-left: 35%;
+    width: 15%;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border: white;
+    border-radius: 5px;
+    background-size: 30px;
+    font-size: medium;
+}
+input[type="submit"]{
+    width: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:white;
+    color: purple;
+    border-color: black;
+    border-radius: 1px;
+    font-size: larger;
+    font-family: 'Ubuntu', sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: lightgray;
+}
