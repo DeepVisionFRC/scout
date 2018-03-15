@@ -10,23 +10,7 @@ h5{
 image{
     position: fixed;
 }
-p#formpart1{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: Larger;
-}
-p#formpart2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: Larger;
-}
-p#formpart3{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: Larger;
-}
-p#formpart4{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: Larger;
-}
-p#formpart5{
+p{
     font-family: 'Ubuntu', sans-serif;
     font-size: Larger;
 }
@@ -35,73 +19,22 @@ form{
     color: white;
     background-color: #b649ff;
 }
-div#WebsiteContainer{
-    /*float: left; */
-}
-div#FormContianer{
+.FormContianer{
     margin-left: 30%;
 }
-div#IdentifierContainer{
+.IdentifierContainer{
     float: left;
 }
 input[type="button"]{
     width: 12%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color:white;
     color: purple;
     border-color: black;
     border-radius: 1px;
     font-size: larger;
     font-family: 'Ubuntu', sans-serif;
-}
-input#autoY[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#autoY[type="button"]:hover{
-    background-color: pink;
-}
-input#autoN[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#autoN[type="button"]:hover{
-    background-color: lightblue;
-}
-input#autoLY[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#autoLY[type="button"]:hover{
-    background-color: pink;
-}
-input#autoLN[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#autoLN[type="button"]:hover{
-    background-color: lightblue;
-}
-input#boxesSC[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#boxesSC[type="button"]:hover{
-    background-color: lightblue;
-}
-input#boxesSW[type="button"]{
-    width: 12%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-input#boxesSW[type="button"]:hover{
-    background-color: lightblue;
 }
 input[type="submit"]{
     width: 15%;
@@ -134,9 +67,6 @@ input[type="text"]{
 input[type="number"]:focus{
     border: 3px solid black;
 }
-input#boxesE[type="number"]:focus{
-    border: 3px solid black;
-}
 input[type="number"]{
     width: 15%;
     height: 50px;
@@ -148,14 +78,10 @@ input[type="number"]{
     background-size: 30px;
     font-size: medium;
 }
-input#boxesE[type="number"]{
-    width: 15%;
-    height: 50px;
-    font-family: 'Ubuntu', sans-serif;
-    box-sizing: border-box;
-    padding: 10px 30px;
-    border: white;
-    border-radius: 5px;
-    background-size: 30px;
-    font-size: medium;
+.FormPartContainer{
+    margin: 0 auto;
+}
+.FormPartContainer p{
+    display: inline-block;
+    margin-right: 100px;
 }

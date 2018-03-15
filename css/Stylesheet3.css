@@ -4,9 +4,6 @@ head{
 body{
     background-color: #b649ff;
 }
-h5{
-    position: fixed;
-}
 p{
     position: fixed;
 }
@@ -19,21 +16,31 @@ form{
     color: white;
     background-color: #b649ff;
 }
-div{
-    margin-left: 30%;
+.header{
+    position: center;
 }
-div#IdentifierContainer{
-    margin-left: 0;
+.header p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: Large;
+    color: white;
+    background-color: #b649ff;
+    margin-right: 20px;
+    display: inline-block;
+}
+.groupedButtons{
+    margin-left: 35%;
+}
+.IdentifierContainer{
     float: left;
+}
+.FormContianer{
+    margin-left: 30%;
 }
 .formdiv{
     margin: 0 auto;
 }
 .formdiv p{
     display: inline-block;
-}
-input[type="number"]:focus{
-    border: 3px solid black;
 }
 input[type="number"]{
     margin-left: 35%;
@@ -47,6 +54,23 @@ input[type="number"]{
     background-size: 30px;
     font-size: medium;
 }
+input[type="number"]:focus{
+    border: 3px solid black;
+}
+input[type="button"]{
+    width: 12%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:white;
+    color: purple;
+    border-color: black;
+    border-radius: 1px;
+    font-size: larger;
+    font-family: 'Ubuntu', sans-serif;
+}
+input[type="button"]:hover{
+    background-color: lightgray;
+}
 input[type="submit"]{
     width: 15%;
     padding-top: 15px;
@@ -58,6 +82,7 @@ input[type="submit"]{
     font-size: larger;
     font-family: 'Ubuntu', sans-serif;
 }
+
 input[type="submit"]:hover{
     background-color: lightgray;
 }
