@@ -16,15 +16,19 @@ form{
     color: white;
     background-color: #b649ff;
 }
-.header{
-    position: center;
-}
 .header p{
     font-family: 'Ubuntu', sans-serif;
     font-size: Large;
     color: white;
     background-color: #b649ff;
     margin-right: 20px;
+    display: inline-block;
+}
+.heading{
+    display: inline-block;
+    margin: 0 auto
+}
+.Team1{
     display: inline-block;
 }
 .groupedButtons{
@@ -36,11 +40,25 @@ form{
 .FormContianer{
     margin-left: 30%;
 }
+.FormPartContainer{
+
+}
 .formdiv{
     margin: 0 auto;
 }
 .formdiv p{
     display: inline-block;
+}
+.checkboxes{
+    margin-right: 10%;
+    padding: 10px;
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+}
+input[type="checkbox"]{
+
 }
 input[type="number"]{
     margin-left: 35%;
