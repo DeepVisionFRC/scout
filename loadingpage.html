@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/Stylesheet2.css">
+<head>
+
+</head>
+<body onload="move()">
+    <div id="imageHolder">
+           <img src="powercube.gif" alt="powercube" id="loadingPage">
+        </div>
+    <div id="bar">
+            <div id="progress">0%</div>
+        </div>
+    <br>
+</body>
+<script>
+    function move() {
+        var elem = document.getElementById("progress");
+        var width = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width  + '%';
+            }
+        }
+    }
+    </script>
+</html>
