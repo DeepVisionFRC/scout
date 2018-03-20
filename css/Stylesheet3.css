@@ -10,12 +10,6 @@ p{
 image{
     position: fixed;
 }
-form{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: Larger;
-    color: white;
-    background-color: #b649ff;
-}
 .header p{
     font-family: 'Ubuntu', sans-serif;
     font-size: xx-large;
@@ -30,32 +24,29 @@ form{
 }
 .Team2{
     display: inline-block;
-    margin-left: 65%;
+    margin-left: 55%;
 }
 .Team3{
     display: inline-block;
-    margin-left: 55%;
+    margin-left: 64%;
 }
 .groupedButtons {
-    margin-left: 35%;
+    margin-left: 32%;
 }
 .IdentifierContainer{
     float: left;
 }
 .FormContianer{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: Larger;
+    color: white;
+    background-color: #b649ff;
     margin-left: 20%;
 }
-.FormPartContainer{
-
-}
-.formdiv{
-    margin: 0 auto;
-}
-.formdiv p{
-    display: inline-block;
-}
+.formdiv{margin: 0 auto;}
+.formdiv p{display: inline-block;}
 .checkboxes{
-    margin-right: 15%;
+    margin-right: 16%;
     padding: 10px;
     -ms-transform: scale(2);
     -moz-transform: scale(2);
@@ -63,13 +54,13 @@ form{
     -o-transform: scale(2);
 }
 input[type="number"]{
-    margin-right: 10%;
-    width: 7%;
-    height: 50px;
+    margin-right: 8%;
+    width: 9%;
+    height: 45px;
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
-    padding: 5px 5px;
+    padding: 5px 3px;
     border: white;
     border-radius: 5px;
     background-size: 20px;
@@ -78,12 +69,25 @@ input[type="number"]{
 input[type="number"]:focus{
     border: 3px solid black;
 }
-input[type="button"]{
-    width: 12%;
+.increase{
+    width: 7%;
+    margin-right: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color:white;
-    color: purple;
+    color: blue;
+    border-color: black;
+    border-radius: 1px;
+    font-size: larger;
+    font-family: 'Ubuntu', sans-serif;
+}
+.decrease{
+    color: red;
+    width: 7%;
+    margin-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:white;
     border-color: black;
     border-radius: 1px;
     font-size: larger;
@@ -103,7 +107,6 @@ input[type="submit"]{
     font-size: larger;
     font-family: 'Ubuntu', sans-serif;
 }
-
 input[type="submit"]:hover{
     background-color: lightgray;
 }

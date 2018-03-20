@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="css/Stylesheet3.css">
+<link rel="icon" href="DV8Brain.png">
 <head>
     <meta charset="UTF-8">
     <title>AutoEvaulation</title>
@@ -8,61 +9,47 @@
 <body>
     <div class="header">
         <p class="heading">Teams In alliance</p>
-        <p class="Team3">123</p>
-        <p class="Team2">123</p>
         <p class="Team1">123</p>
+        <p class="Team2">124</p>
+        <p class="Team3">125</p>
     </div>
     <br><br><br><br><br><br>
-    <div id="WebsiteContainer">
-        <div class="IdentifierContainer">
-          <h5>&copy; DeepvisionTechnologies</h5><br><br><br>
-          <img src="DV8Brain.png" alt="expranding brain meme">
+    <div class="IdentifierContainer">
+        <h5>&copy; DeepvisionTechnologies</h5><br><br><br>
+        <img src="DV8Brain.png" alt="expranding brain meme">
+    </div>
+    <div class="FormContianer">
+        <p>Movement:</p>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="mm1">
+            <input type="checkbox" class="checkboxes" id="mm2">
+            <input type="checkbox" class="checkboxes" id="mm3">
         </div>
-        <form action="loadingpage.html">
-            <div class="FormContianer">
-                <div class="FormPartContainer">
-                    <p>Movement:</p>
-                    <div class="groupedButtons">
-                        <input type="checkbox" class="checkboxes">
-                        <input type="checkbox" class="checkboxes">
-                        <input type="checkbox" class="checkboxes">
-                    </div>
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formpart3">Boxes into exchange:</p>
-                    <div class="groupedButtons">
-                        <input type="number" id="boxesE1" placeholder="01">
-                        <input type="number" id="boxesE2" placeholder="01">
-                        <input type="number" id="boxesE3" placeholder="01">
-                    </div>
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formpart4">Boxes into ally switch:</p>
-                    <div class="groupedButtons">
-                    <input type="number" id="boxesSW1" placeholder="01">
-                    <input type="number" id="boxesSW2" placeholder="01">
-                    <input type="number" id="boxesSW3" placeholder="01">
-                    </div>
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formpart5">Boxes into scale:</p>
-                    <div class="groupedButtons">
-                        <input type="number" id="boxesSC1" placeholder="01">
-                        <input type="number" id="boxesSC2" placeholder="01">
-                        <input type="number" id="boxesSC3" placeholder="01">
-                    </div>
-                </div>
-                <br>
-                <input type="submit" id="submit" name="Next Page" value="Next">
-            </div>
-        </form>
+        <br>
+        <p id="formpart3">Boxes into Exchange:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesE1" placeholder="01" >
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesE1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesE1').value>0){document.getElementById('boxesE1').value--;}">
+        </div>
+        <br>
+        <p id="formpart4">Boxes into ally switch:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesSW1" placeholder="01">
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesSW1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesSW1').value>0){document.getElementById('boxesSW1').value--;}">
+        </div>
+        <br>
+        <p id="formpart5">Boxes into scale:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesSC1" placeholder="01" value="1">
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesSC1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesSC1').value>0){document.getElementById('boxesSC1').value--;}">
+        </div>
+        <br>
+        <input type="submit" id="submit" name="Next Page" value="Next" onclick="nextPageAA()">
     </div>
 </body>
-<script>
-
-</script>
+<script src="script.js"></script>
 </html>
 
