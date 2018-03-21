@@ -26,6 +26,11 @@ wss.on('connection', function connection(ws, req) {
       if (request.type == "autodata") {
         writeMatchToDatabase(request.auto);
       }
+      if (request.type == "matchinfo") {
+        getMatchInfoForScout(request.scout, function(result) {
+          ws.send(JSON.stringify(result));
+        });
+      }
     });
 });
 
@@ -188,6 +193,60 @@ async function configureDatabaseForEvent(event_code, event_year) {
     console.log("100% - Uploading to database");
     writeRawDataToDatabase(match_keys.concat(blue_teams).concat(red_teams));
   }
+}
+
+function getMatchInfoForScout(scout, callback) {
+  async.series([
+    function setSAuth(step) {
+      doc.useServiceAccountAuth(creds, step);
+    },
+    function getInfoAndWorksheets(step) {
+      doc.getInfo(function(err, info) {
+        sheet = info.worksheets[1];
+        step();
+      });
+    },
+    function workingWithCells(step) {
+      sheet.getCells({
+        'min-row': 2,
+        'max-col': 3,
+        'return-empty': false
+      }, function(err, cells) {
+        var out_array = []
+        for (i in cells) {
+          if (scout.toLowerCase() === cells[i].value) {
+            var out = "";
+            if (cells[i].col == 2) {
+              out = {
+                "type": "scoutinfo",
+                "scout": scout,
+                "match_key": cells[(cells[i].row - 2) * 3].value,
+                "alliance": "blue"
+              }
+            } else {
+              out = {
+                "type": "scoutinfo",
+                "scout": scout,
+                "match_key": cells[(cells[i].row - 2) * 3].value,
+                "alliance": "red"
+              }
+            }
+            out_array.push(out);
+          }
+        }
+        var out_json = {
+          "type": "scoutinfoarray",
+          "array": out_array
+        }
+        callback(out_json);
+        step();
+      });
+    },
+  ], function(err){
+    if (err) {
+      console.log('Error: ' + err);
+    }
+  });
 }
 
 function compareMatches(a, b) {
