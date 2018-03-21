@@ -12,21 +12,8 @@
             <div id="progress">0%</div>
         </div>
     <br>
+    <p id="nut"></p>
 </body>
-<script>
-    function move() {
-        var elem = document.getElementById("progress");
-        var width = 0;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-            } else {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width  + '%';
-            }
-        }
-    }
-    </script>
+<script src="script.js">
+</script>
 </html>

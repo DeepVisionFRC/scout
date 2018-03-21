@@ -6,41 +6,49 @@
     <title>TeleopEvaluation</title>
 </head>
 <body>
-    <div class="WebsiteContainer">
-        <div class="IdentifierContainer">
-            <h5>&copy; DeepvisionTechnologies</h5><br><br><br>
-            <img src="DV8Brain.png" alt="expranding brain meme">
-        </div>
-        <div class="FormContianer">
-            <form action="loadingpage.html">
-                <div class="FormPartContainer">
-                    <p id="formPart1">Boxes on ally switch :</p>
-                    <input type="number" id="numberInput1">
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formPart2">Boxes on scale:</p>
-                    <input type="number" id="numberInput2">
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formPart3">Boxes on enemy switch:</p>
-                    <input type="number" id="numberInput3">
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formPart4">Boxes into exchange for levitate:</p>
-                    <input type="number" id="numberInput4">
-                </div>
-                <br>
-                <div class="FormPartContainer">
-                    <p id="formPart5">Boxes into exchange for force:</p>
-                    <input type="number" id="numberInput5">
-                </div>
-                <br>
-                <input type="submit" value="Submit Data">
-            </form>
-        </div>
+    <div class="header">
+        <p class="heading">Teams In alliance</p>
+        <p class="Team3">123</p>
+        <p class="Team2">123</p>
+        <p class="Team1">123</p>
     </div>
+    <br><br><br><br><br><br>
+    <div class="IdentifierContainer">
+        <h5>&copy; DeepvisionTechnologies</h5><br><br><br>
+        <img src="DV8Brain.png" alt="expranding brain meme">
+    </div>
+    <form action="loadingpage.html">
+        <div class="FormContianer">
+            <p id="formPart1">Boxes on ally switch :</p>
+            <div class="groupedButtons">
+                <input type="number" id="boxesASW1"  placeholder="01">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesASW1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesASW1').value>0){document.getElementById('boxesASW1').value--;}">
+            </div>
+            <br>
+            <p id="formPart2">Boxes on scale:</p>
+            <div class="groupedButtons">
+                <input type="number" id="boxesSC1" placeholder="01">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesSC1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesSC1').value>0){document.getElementById('boxesSC1').value--;}">
+            </div>
+            <br>
+            <p id="formPart3">Boxes on enemy switch:</p>
+            <div class="groupedButtons">
+                <input type="number" id="boxesESW1" placeholder="01">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesESW1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesESW1').value>0){document.getElementById('boxesESW1').value--;}">
+            </div>
+            <br>
+            <p id="formPart4">Boxes into Exchange</p>
+            <div class="groupedButtons">
+                <input type="number" id="boxesEX1" placeholder="01">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesEX1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesEX1').value>0){document.getElementById('boxesEX1').value--;}">
+            </div>
+            <br>
+            <input type="submit" value="Submit Data" onclick="nextPageT()">
+        </div>
+    </form>
 </body>
 </html>
