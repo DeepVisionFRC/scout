@@ -1,11 +1,11 @@
-//Auto vars
+//Auto Vars
 var AmovementTeamA  = false;
 var AmovementTeamB  = false;
 var AmovementTeamC  = false;
 var AboxesEX = 0;
 var AboxesSW = 0;
 var AboxesSC = 0;
-function nextPageAA() {
+function nextPageA() {
     AmovementTeamA = document.getElementById('mm1').checked;
     AmovementTeamB = document.getElementById('mm2').checked;
     AmovementTeamC = document.getElementById('mm3').checked;
@@ -30,6 +30,13 @@ function move() {
     }
 }
 var TboxesEX = 0;
-var TboxesSW = 0;
+var TboxesASW = 0;
+var TboxesESW = 0;
 var TboxesSC = 0;
-var TboxesSC = 0;
+function nextPageT(){
+    TboxesEX = document.getElementById('boxesEX1').value;
+    TboxesASW = document.getElementById('boxesASW1').value;
+    TboxesESW = document.getElementById('boxesESW1').value;
+    TboxesSC = document.getElementById('boxesSC1').value;
+    document.location.assign("loadingpage.html");
+}

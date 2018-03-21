@@ -22,32 +22,32 @@
             <p id="formPart1">Boxes on ally switch :</p>
             <div class="groupedButtons">
                 <input type="number" id="boxesASW1"  placeholder="01">
-                <input type="button" class="increase" value="+">
-                <input type="button" class="decrease" value="-">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesASW1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesASW1').value>0){document.getElementById('boxesASW1').value--;}">
             </div>
             <br>
             <p id="formPart2">Boxes on scale:</p>
             <div class="groupedButtons">
                 <input type="number" id="boxesSC1" placeholder="01">
-                <input type="button" class="increase" value="+">
-                <input type="button" class="decrease" value="-">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesSC1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesSC1').value>0){document.getElementById('boxesSC1').value--;}">
             </div>
             <br>
             <p id="formPart3">Boxes on enemy switch:</p>
             <div class="groupedButtons">
                 <input type="number" id="boxesESW1" placeholder="01">
-                <input type="button" class="increase" value="+">
-                <input type="button" class="decrease" value="-">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesESW1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesESW1').value>0){document.getElementById('boxesESW1').value--;}">
             </div>
             <br>
             <p id="formPart4">Boxes into Exchange</p>
             <div class="groupedButtons">
                 <input type="number" id="boxesEX1" placeholder="01">
-                <input type="button" class="increase" value="+">
-                <input type="button" class="decrease" value="-">
+                <input type="button" class="increase" value="+" onclick="document.getElementById('boxesEX1').value++;">
+                <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesEX1').value>0){document.getElementById('boxesEX1').value--;}">
             </div>
             <br>
-            <input type="submit" value="Submit Data">
+            <input type="submit" value="Submit Data" onclick="nextPageT()">
         </div>
     </form>
 </body>

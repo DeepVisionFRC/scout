@@ -1,15 +1,7 @@
-head{
-    background-color: #b649ff;
-}
-body{
-    background-color: #b649ff;
-}
-p{
-    position: fixed;
-}
-image{
-    position: fixed;
-}
+head{background-color: #b649ff;}
+body{background-color: #b649ff;}
+p{position: fixed;}
+image{position: fixed;}
 .header p{
     font-family: 'Ubuntu', sans-serif;
     font-size: xx-large;
@@ -30,12 +22,8 @@ image{
     display: inline-block;
     margin-left: 64%;
 }
-.groupedButtons {
-    margin-left: 32%;
-}
-.IdentifierContainer{
-    float: left;
-}
+.groupedButtons {margin-left: 32%;}
+.IdentifierContainer{float: left;}
 .FormContianer{
     font-family: 'Ubuntu', sans-serif;
     font-size: Larger;
