@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/Stylesheet3.css">
+<link rel="icon" href="DV8Brain.png">
+<head>
+    <meta charset="UTF-8">
+    <title>Endgame</title>
+</head>
+<body>
+    <div class="header">
+        <p class="heading">Teams In alliance</p>
+        <p class="Team1">123</p>
+        <p class="Team2">124</p>
+        <p class="Team3">125</p>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="IdentifierContainer">
+        <h5>&copy; DeepvisionTechnologies</h5><br><br><br>
+        <img src="DV8Brain.png" alt="expranding brain meme">
+    </div>
+    <div class="FormContianer">
+        <p>Boxes for Boost:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesB1" placeholder="01" >
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesB1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesB1').value>0){document.getElementById('boxesB1').value--;}">
+        </div><br>
+        <p>Boxes for Levitate:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesL1" placeholder="01" >
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesL1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesL1').value>0){document.getElementById('boxesL1').value--;}">
+        </div><br>
+        <p>Boxes for Force:</p>
+        <div class="groupedButtons">
+            <input type="number" id="boxesF1" placeholder="01" >
+            <input type="button" class="increase" value="+" onclick="document.getElementById('boxesF1').value++;">
+            <input type="button" class="decrease" value="-" onclick="if(document.getElementById('boxesF1').value>0){document.getElementById('boxesF1').value--;}">
+        </div><br>
+        <p>Boost Activated?</p><br>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="BoostA1">
+        </div>
+        <p>Levitate Activated?</p><br>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="LevitateA1">
+        </div>
+        <p>Force Activated?</p><br>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="ForceA1">
+        </div>
+        <p>Parked on platform:</p><br>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="ParkTeamA">
+            <input type="checkbox" class="checkboxes" id="ParkTeamB">
+            <input type="checkbox" class="checkboxes" id="ParkTeamC">
+        </div>
+        <p>Climbed on platform:</p><br>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="ClimbTeamA">
+            <input type="checkbox" class="checkboxes" id="ClimbTeamB">
+            <input type="checkbox" class="checkboxes" id="ClimbTeamC">
+        </div>
+        <div class="header">
+            <p>Penalties:</p>
+        </div>
+        <p>Red Cards: </p>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="RedCardTeamA">
+            <input type="checkbox" class="checkboxes" id="RedCardTeamB">
+            <input type="checkbox" class="checkboxes" id="RedCardTeamC">
+        </div>
+        <p>Yellow Cards: </p>
+        <div class="groupedButtons">
+            <input type="checkbox" class="checkboxes" id="YellowCardTeamA">
+            <input type="checkbox" class="checkboxes" id="YellowCardTeamB">
+            <input type="checkbox" class="checkboxes" id="YellowCardTeamC">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
